@@ -54,14 +54,15 @@ footer{
   margin: 20px;
   border-radius: 10px;
   border: 1px solid orange;
-
 }
+
 .intro_content{
   width: 45%;
   margin: 20px;
   font-size: 20px;
   float: left;
 }
+
 .btn a{
   color: black;
   text-decoration: none;
@@ -217,7 +218,28 @@ aside h1{
   }
 }
 
+.intro_content{
+  position: relative;
+  float: none;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  clear: both;
+}
+
+.intro_img img{
+  position: relative;
+  float: none;
+  clear: both;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+
 @media screen and (max-width: 600px) {
+
   .logoHeader h1{
     position: relative;
     top: -135px;
