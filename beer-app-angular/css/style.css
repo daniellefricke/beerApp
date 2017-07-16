@@ -44,21 +44,22 @@ footer{
 .intro_head{
   float: left;
   width: 100%;
-  margin: 20px;
+  margin: 10px;
   text-align: center;
+  color: orange;
 }
 
 .intro_img img{
   width: 45%;
   float: right;
-  margin: 20px;
+  margin-right: 20px;
   border-radius: 10px;
   border: 1px solid orange;
 }
 
 .intro_content{
   width: 45%;
-  margin: 20px;
+  margin-left: 20px;
   font-size: 20px;
   float: left;
 }
