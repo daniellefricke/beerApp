@@ -54,9 +54,14 @@ footer{
   margin: 20px;
   border-radius: 10px;
   border: 1px solid orange;
-  clear: both;
-}
 
+}
+.intro_content{
+  width: 45%;
+  margin: 20px;
+  font-size: 20px;
+  float: left;
+}
 .btn a{
   color: black;
   text-decoration: none;
