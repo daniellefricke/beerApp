@@ -240,6 +240,61 @@ aside h1{
   border-radius: 10px;
   border: 1px solid orange;
 }
+
+.content{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+  clear: both;
+}
+
+.content img{
+  display: block;
+  padding: 10px;
+  margin: auto;
+  height: 150px;
+}
+
+.mapContainer{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: 1px solid orange;
+  border-radius: 10px;
+  clear: both;
+}
+
+aside{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  background-color: lightgrey;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+  clear: both;
+}
+
+.beerContent{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+}
+
 }
 @media screen and (max-width: 600px) {
 
@@ -250,13 +305,15 @@ aside h1{
   }
 
   .content{
-    margin: 10px;
-    background-color: white;
-    width: 80%;
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
     padding: 10px;
     border: 1px solid orange;
     text-align: center;
     border-radius: 10px;
+    clear: both;
   }
 
   .content img{
@@ -267,29 +324,34 @@ aside h1{
   }
 
   .mapContainer{
-    float: left;
-    width: 80%;
-    margin: 10px;
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
     border: 1px solid orange;
     border-radius: 10px;
+    clear: both;
   }
 
   aside{
-    float: left;
-    width: 80%;
-    margin: 10px;
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
     background-color: lightgrey;
     padding: 10px;
     border: 1px solid orange;
     text-align: center;
     border-radius: 10px;
+    clear: both;
   }
 
   .beerContent{
+    float: none;
     display: block;
+    width: 90%;
     margin: auto;
     background-color: white;
-    width: 80%;
     padding: 10px;
     border: 1px solid orange;
     text-align: center;
@@ -305,9 +367,11 @@ aside h1{
   }
 
   .content{
-    margin: 10px;
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
     background-color: white;
-    width: 80%;
     padding: 10px;
     border: 1px solid orange;
     text-align: center;
@@ -322,16 +386,19 @@ aside h1{
   }
 
   .mapContainer{
-    float: left;
+    float: none;
+    display: block;
     width: 90%;
-    margin: 10px;
+    margin: auto;
     border: 1px solid orange;
     border-radius: 10px;
   }
 
   aside{
+    float: none;
+    display: block;
     width: 90%;
-    margin: 10px;
+    margin: auto;
     background-color: lightgrey;
     padding: 10px;
     border: 1px solid orange;
