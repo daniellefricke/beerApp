@@ -216,6 +216,9 @@ aside h1{
     color: black;
     text-align: center;
   }
+
+.intro_head{
+  text-align: center;
 }
 
 .intro_content{
@@ -229,15 +232,15 @@ aside h1{
 }
 
 .intro_img img{
-  position: relative;
+    display: block;
+    margin: auto;
   float: none;
   clear: both;
   width: 80%;
-  margin: auto;
   border-radius: 10px;
   border: 1px solid orange;
 }
-
+}
 @media screen and (max-width: 600px) {
 
   .logoHeader h1{
