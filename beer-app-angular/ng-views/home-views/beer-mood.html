@@ -24,6 +24,7 @@
 
     <div class="beer-container" ng-repeat="beer in (vm.beers | filter:vm.filterByProperties) as filteredBeers">
       <p class="style_name"><a data-ui-sref="beerShow({id: beer.id})">{{beer.name}} </a></p>
+      <img class='icon' src='{{beer.icon}}'></img>
       <!-- <a data-ui-sref="breweryShow({id: beer.brewery_id})"><img class="beer-icon-image" src="{{beer.icon}}" alt=""></a> -->
       <p>{{beer.category}}</p>
       <!-- <p><a data-ui-sref="beerShow({id: beer.id})">{{beer.name}} </a></p> -->
