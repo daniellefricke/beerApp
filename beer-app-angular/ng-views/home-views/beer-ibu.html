@@ -9,6 +9,7 @@
 
   <div class="beer-container" data-ng-repeat="beer in vm.beers| where:{ibu: vm.ibuMod}">
     <p><a data-ui-sref="beerShow({id: beer.id})">{{beer.name}} </a></p>
+    <img class='icon' src='{{beer.icon}}'></img>
     <p class="style_name">{{beer.style_name}}</p>
   </div>
 

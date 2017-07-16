@@ -54,12 +54,12 @@ h1{
 .beer-container{
   font-family: 'Righteous', sans-serif;
   margin: 5px;
-  height: 150px;
+  height: 160px;
   width: 150px;
   border: 2px solid black;
   border-radius: 5px;
   text-align: center;
-  background-color: #bfbdbd;
+  background-color: #white;
 }
 
 .beer-container-index{
