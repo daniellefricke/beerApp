@@ -1,77 +1,6 @@
 body{
-  /*background-color: #F6ED93*/
+  background-color: #F6ED93
 }
-
-.test-color{
-  /*background-color: #F6ED93;*/
-  background-color: #FFE30D;
-  /*background-image:url("https://ibb.co/hUjKXk");*/
-  font-family: 'Righteous', sans-serif;
-  position: relative;
-  color: black;
-}
-.navbar{
-  /*opacity: 0.9;*/
-  position: fixed;
-  z-index: 5;
-  background: rgba(255, 255, 255, 0);
-  color: black;
-  top: 0;
-  left: 0;
-  right:0;
-  padding: 6px;
-
-}
-.navbar-header a{
-  color: white;
-  font-size: 30px;
-  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-
-}
-
-.navbar-header a:hover{
-  color: white;
-  background-color: rgba(236, 153, 48, .3);
-  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-
-}
-.navbar-header a:active {
-  color: white;
-  background-color: rgba(236, 153, 48, .3);
-  text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-
-}
-
-.black{
-  color: black;
-  font-family: 'Righteous', sans-serif;
-}
-
-.black:hover{
-
-}
-
-.navbar-collapse.collapse a:hover{
-  color: black;
-  font-family: 'Righteous', sans-serif;
-  background-color: rgba(236, 153, 48, .3);
-}
-
-.navbar-collapse.collapse a .active{
-  color: black;
-  font-family: 'Righteous', sans-serif;
-  background-color: rgba(236, 153, 48, .3);
-}
-
-
-.terms{
-  margin: 50px;
-  /*border: 2px solid black;*/
-  text-align: center;
-  z-index: 5;
-}
-
-
 
 body h1{
   font-family: 'Righteous', sans-serif;
@@ -84,54 +13,70 @@ footer{
 }
 
 .navbar-header{
-  /*background-color: rgba(236, 153, 48, 0.5);*/
+  background-color: rgba(236, 153, 48, 0.5);
   color: black;
-  padding-left: 5px;
+  padding-left: 15px;
   text-align: center;
   font-family: 'Righteous', sans-serif;
 }
 
-a.active{
-  color: black;
-  padding-left: 5px;
-  text-align: center;
-  font-family: 'Righteous', sans-serif;
+.navbar-header:hover{
+  background-color: rgba(236, 153, 48, 1);
 }
 
-
-
-
-
-
-.header{
-  /*height: 500px;*/
-  /*background-image:url("http://www.lowgluten.org/wp-content/uploads/2015/08/header2015b.png");*/
-  background-position: 0px -100px;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  /*max-width: 100%;*/
-  min-height: 200px;
-  margin: 0;
- padding: 0;
- position: absolute;
- top: -90px;
- left:0;
- right:0;
- bottom:0;
- background-size:cover;
+.header img{
+  height: 300px;
+  width: 100%;
 }
 
 .logoHeader{
-  height: 200px;
-
+  height: 10px;
 }
 .logoHeader h1{
   position: relative;
-  /*top: -175px;*/
+  top: -175px;
   font-family: 'Righteous', sans-serif;
   font-size: 100px;
   color: black;
   text-align: center;
+}
+
+.intro_head{
+  float: left;
+  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+.intro_img img{
+  width: 45%;
+  float: right;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid orange;
+  clear: both;
+}
+
+.btn a{
+  color: black;
+  text-decoration: none;
+}
+
+.btn a:hover{
+  color: grey;
+  text-decoration: none;
+}
+
+.btn a:active{
+  color: grey;
+  text-decoration: none;
+}
+.map img{
+  clear: both;
+  margin: 20px;
+  width: 25%;
+  border-radius: 10px;
+  border: 1px solid orange;
 }
 
 .content{
@@ -151,7 +96,6 @@ a.active{
 }
 
 .brewImg{
-  top: 0;
   position: inherit;
   margin: auto;
 }
@@ -200,7 +144,6 @@ aside h1{
 
 .beerContent{
   display: block;
-  /*margin: 50px;*/
   margin: auto;
   background-color: white;
   width: 50%;
@@ -244,10 +187,9 @@ aside h1{
 }
 
 .sorts{
-
-  padding: 5px;
+  text-align: center;
   margin: auto;
-  width: 90%
+  padding: 5px;
 }
 
 .sorts button{
@@ -259,10 +201,22 @@ aside h1{
   margin: auto;
 }
 
+@media screen and (max-width: 800px) {
+  .logoHeader h1{
+    position: relative;
+    top: -155px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 75px;
+    color: black;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .logoHeader h1{
     position: relative;
-    font-size: 75px;
+    top: -135px;
+    font-size: 50px;
   }
 
   .content{
