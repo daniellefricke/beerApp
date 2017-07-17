@@ -553,14 +553,14 @@ function BrewMoodControllerFunction(BreweryFactory){
 
 
   function BreweryFactoryFunction( $resource ){
-    return $resource( "http://localhost:3000/breweries/:id")
+    return $resource( "https://dmvbrewmood.herokuapp.com/breweries/:id")
   }
 
   function BeerFactoryFunction( $resource ){
-    return $resource( "http://localhost:3000/beers/:id")
+    return $resource( "https://dmvbrewmood.herokuapp.com/beers/:id")
   }
-  function CommentFactoryFunction($resource){
-    return $resource("http://localhost:3000/comments/:id.json", {}, {
-        update: { method: "PUT" }
-    })
-  }
+  // function CommentFactoryFunction($resource){
+  //   return $resource("http://localhost:3000/comments/:id.json", {}, {
+  //       update: { method: "PUT" }
+  //   })
+  // }
