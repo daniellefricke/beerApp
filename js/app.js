@@ -88,15 +88,11 @@ angular
       if (this.termsRead==2){
         localStorage.setItem("startpage", true)
         this.startpage=true
-      }
-      else
-      {
+      }else{
         alert('Please, click on read and agree to the Terms and Conditions and Privacy Policy')
       }
-
       // location.reload()
     }
-
     console.log("startFunction");
     this.startpage= localStorage.getItem("startpage")
     console.log(this.startpage);
@@ -452,8 +448,6 @@ function BeerMoodControllerFunction(BeerFactory){
 
       });
   }
-
-
 }
 
 function BrewMoodControllerFunction(BreweryFactory){
@@ -532,8 +526,6 @@ function BrewMoodControllerFunction(BreweryFactory){
 
       });
   }
-
-
 }
 
 // function BreweryNewControllerFunction(GrumbleFactory){
@@ -553,14 +545,14 @@ function BrewMoodControllerFunction(BreweryFactory){
 
 
   function BreweryFactoryFunction( $resource ){
-    return $resource( "https://dmvbrewmood.herokuapp.com/breweries/:id")
+    return $resource( "https://dmvbrewmood.herokuapp.com/breweries/:id.json")
   }
 
   function BeerFactoryFunction( $resource ){
-    return $resource( "https://dmvbrewmood.herokuapp.com/beers/:id")
+    return $resource( "https://dmvbrewmood.herokuapp.com/beers/:id.json")
   }
-  // function CommentFactoryFunction($resource){
-  //   return $resource("http://localhost:3000/comments/:id.json", {}, {
-  //       update: { method: "PUT" }
-  //   })
-  // }
+  function CommentFactoryFunction($resource){
+    return $resource("http://localhost:3000/comments/:id.json", {}, {
+        update: { method: "PUT" }
+    })
+  }
