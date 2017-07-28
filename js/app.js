@@ -14,8 +14,7 @@ angular
   ])
   .config([
     "$stateProvider",
-    RouterFunction,
-    $locationProvider.html5Mode(true)
+    RouterFunction
   ])
   .controller("startpage",[startFunction])
   .controller("BreweryIndexController", [
