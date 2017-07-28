@@ -16,7 +16,7 @@ angular
     "$stateProvider",
     RouterFunction
   ])
-  .controller("startpage")
+
   .controller("BreweryIndexController", [
     "BreweryFactory",
     BreweryIndexControllerFunction
