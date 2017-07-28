@@ -176,93 +176,93 @@ function RouterFunction($stateProvider){
   $stateProvider
   .state("homePage", {
     url: "/",
-    templateUrl: "ng-views/home-views/bac_calculator.html",
+    templateUrl: "js/ng-views/home-views/bac_calculator.html",
     controller: "HomePageController",
     controllerAs: "vm"
   })
   .state("breweryIndex", {
     url: "/breweries",
-    templateUrl: "ng-views/breweries/brewery-index.html",
+    templateUrl: "js/ng-views/breweries/brewery-index.html",
     controller: "BreweryIndexController",
     controllerAs: "vm"
   })
   .state("beerIndex", {
     url: "/beers",
-    templateUrl: "ng-views/beers/beer-index.html",
+    templateUrl: "js/ng-views/beers/beer-index.html",
     controller: "BeerIndexController",
     controllerAs: "vm"
   })
   .state("breweryShow", {
     url: "/breweries/:id",
-    templateUrl: "ng-views/breweries/brewery-show.html",
+    templateUrl: "js/ng-views/breweries/brewery-show.html",
     controller: "BreweryShowController",
     controllerAs: "vm"
   })
   .state("beerShow", {
     url: "/beers/:id",
-    templateUrl: "ng-views/beers/beer-show.html",
+    templateUrl: "js/ng-views/beers/beer-show.html",
     controller: "BeerShowController",
     controllerAs: "vm"
   })
   .state("beerPercent", {
     url: "/beerpercent",
-    templateUrl: "ng-views/home-views/beer-percent.html",
+    templateUrl: "js/ng-views/home-views/beer-percent.html",
     controller: "BeerPercentController",
     controllerAs: "vm"
   })
   .state("beerIbu", {
     url: "/beer-ibu",
-    templateUrl: "ng-views/home-views/beer-ibu.html",
+    templateUrl: "js/ng-views/home-views/beer-ibu.html",
     controller: "BeerIbuController",
     controllerAs: "vm"
   })
-  .state("commentIndex", {
-    url: "/comments",
-    templateUrl: "ng-views/comment/comment-index.html",
-    controller: "CommentIndexController",
-    controllerAs: "vm"
-  })
-  .state("commentShow", {
-    url: "/comments/:id",
-    templateUrl: "ng-views/comment/comment-show.html",
-    controller: "CommentShowController",
-    controllerAs: "vm"
-})
+  // .state("commentIndex", {
+  //   url: "/comments",
+  //   templateUrl: "js/ng-views/comment/comment-index.html",
+  //   controller: "CommentIndexController",
+  //   controllerAs: "vm"
+  // })
+//   .state("commentShow", {
+//     url: "/comments/:id",
+//     templateUrl: "js/ng-views/comment/comment-show.html",
+//     controller: "CommentShowController",
+//     controllerAs: "vm"
+// })
 
 // .state("commentNew",{
 //   url: "/comments/new",
-//   templateUrl: "js/ng-views/comment/comment-new.html",
+//   templateUrl: "js/js/ng-views/comment/comment-new.html",
 //   controller: "CommentNewController",
 //   controllerAs: "vm"
 // })
 // .state("commentEdit",{
 //   url: "/comments/:id/edit",
-//   templateUrl: "js/ng-views/comment/comment-edit.html",
+//   templateUrl: "js/js/ng-views/comment/comment-edit.html",
 //   controller: "CommentEditController",
 //   controllerAs: "vm"
 // })
   .state("beerMood", {
     url: "/beer-mood",
-    templateUrl: "ng-views/home-views/beer-mood.html",
+    templateUrl: "js/ng-views/home-views/beer-mood.html",
     controller: "BeerMoodController",
     controllerAs: "vm"
   })
   .state("brewMood", {
     url: "/brew-mood",
-    templateUrl: "ng-views/home-views/brew-mood.html",
+    templateUrl: "js/ng-views/home-views/brew-mood.html",
     controller: "BrewMoodController",
     controllerAs: "vm"
   })
 
   // .state("breweryNew",{
   //   url: "/breweries/new",
-  //   templateUrl: "js/ng-views/new.html",
+  //   templateUrl: "js/js/ng-views/new.html",
   //   controller: "BreweryNewController",
   //   controllerAs: "vm"
   // })
   // .state("breweryEdit",{
   //   url: "/breweries/:id/edit",
-  //   templateUrl: "js/ng-views/edit.html",
+  //   templateUrl: "js/js/ng-views/edit.html",
   //   controller: "BreweryEditController",
   //   controllerAs: "vm"
   // })
