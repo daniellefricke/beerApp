@@ -41,6 +41,7 @@ angular
   // .controller("CommentShowController",["CommentFactory","$stateParams",CommentShowControllerFunction])
   // .controller("CommentNewController",["CommentFactory",CommentNewControllerFunction])
   // .controller("CommentEditController",["CommentFactory","$stateParams",CommentEditControllerFunction])
+  
   .controller("BeerPercentController",[
     "BeerFactory",
     BeerPercentControllerFunction
