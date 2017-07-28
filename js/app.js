@@ -7,7 +7,7 @@ $(".navbar-header a").on("click", function(){
 
 angular
   .module("beerApp", [
-    // "ngMap",
+    "ngMap",
     "ui.router",
     "ngResource",
     'angular.filter'
@@ -291,6 +291,7 @@ function BreweryIndexControllerFunction( BreweryFactory ){
 function BeerIndexControllerFunction( BeerFactory, BreweryFactory ){
   this.beers = BeerFactory.query()
   let self = this
+  console.log(this.beers)
 }
 function CommentIndexControllerFunction( CommentFactory ){
   console.log("Am CommentIndexControllerFunction");
