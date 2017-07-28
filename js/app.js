@@ -16,7 +16,7 @@ angular
     "$stateProvider",
     RouterFunction
   ])
-  .controller("startpage",[startFunction])
+  .controller("startpage")
   .controller("BreweryIndexController", [
     "BreweryFactory",
     BreweryIndexControllerFunction
@@ -41,7 +41,6 @@ angular
   // .controller("CommentShowController",["CommentFactory","$stateParams",CommentShowControllerFunction])
   // .controller("CommentNewController",["CommentFactory",CommentNewControllerFunction])
   // .controller("CommentEditController",["CommentFactory","$stateParams",CommentEditControllerFunction])
-  
   .controller("BeerPercentController",[
     "BeerFactory",
     BeerPercentControllerFunction
