@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <base href="https://daniellefricke.github.io/beerApp/">
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
@@ -19,10 +21,11 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
     <!-- Google Map CDN -->
-    <!-- <script src="/bower_components/ngmap/build/scripts/ng-map.min.js"></script>
 
-    <script src="bower_components/ngmap/build/scripts/ng-map.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.4.1/angular-google-maps_dev_mapped.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.4.1/angular-google-maps_dev_mapped.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js"></script> -->
 
 
     <script src="js/app.js" charset="utf-8"></script>
@@ -34,7 +37,7 @@
   </head>
 
   <body ng-controller="startpage as vm">
-    <div class="terms">
+    <div class="terms" ng-hide="vm.startpage">
       <!-- <div class="well well-lg">
       <p>Terms and Agreements:</p>
       <p >By clicking this, I confirm the following agreements.<br>
@@ -53,7 +56,7 @@
     <!-- </div> -->
     </div>
 
-    <div>
+    <div ng-show="vm.startpage">
       <!-- Fixed navbar -->
       <nav class="navbar navbar-inverse navbar-fixed-top">
      <div class="container-fluid">
@@ -64,19 +67,19 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="/#/">DMV Brew Mood</a>
+         <a class="navbar-brand" href="#/">DMV Brew Mood</a>
        </div>
        <div id="navbar" class="navbar-collapse collapse">
          <ul class="nav navbar-nav">
-           <li><a href="/#/breweries">Breweries</a></li>
-           <li><a href="/#/beers">Beers</a></li>
+           <li><a href="#/breweries">Breweries</a></li>
+           <li><a href="#/beers">Beers</a></li>
            <li class="dropdown">
              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sorts/Searches <span class="caret"></span></a>
              <ul class="dropdown-menu">
-               <li><a href="/#/beer-mood">Find Beers by Mood</a></li>
-               <li><a href="/#/brew-mood">Find Breweries by Mood</a></li>
-               <li><a href="/#/beerpercent">Find Beers by ABV</a></li>
-               <li><a href="/#/beer-ibu">Find Beers by IBU</a></li>
+               <li><a href="#/beer-mood">Find Beers by Mood</a></li>
+               <li><a href="#/brew-mood">Find Breweries by Mood</a></li>
+               <li><a href="#/beerpercent">Find Beers by ABV</a></li>
+               <li><a href="#/beer-ibu">Find Beers by IBU</a></li>
                <!-- <li><a href="/#/breweries">Search All Breweries</a></li>
                <li><a href="/#/beers">Search All Beers</a></li> -->
              </ul>
@@ -95,12 +98,12 @@
         </div>
 
         <div class="sorts">
-          <button type="button" class="btn btn-md btn-warning"><a href="/#/beer-mood">Find Beers by Mood</a></button>
-          <button type="button" class="btn btn-md btn-warning"><a href="/#/brew-mood">Find Breweries by Mood</a></button>
-          <button type="button" class="btn btn-md btn-warning"><a href="/#/beerpercent">Find Beers by ABV</a></button>
-          <button type="button" class="btn btn-md btn-warning"><a href="/#/beer-ibu">Find Beers by IBU</a></button>
-          <button type="button" class="btn btn-md btn-warning"><a href="/#/beers">Find Beers by Name</a></button>
-          <button type="button" class="btn btn-md btn-warning"><a href="/#/breweries">Find Breweries by Name</a></button>
+          <button type="button" class="btn btn-md btn-warning"><a href="#/beer-mood">Find Beers by Mood</a></button>
+          <button type="button" class="btn btn-md btn-warning"><a href="#/brew-mood">Find Breweries by Mood</a></button>
+          <button type="button" class="btn btn-md btn-warning"><a href="#/beerpercent">Find Beers by ABV</a></button>
+          <button type="button" class="btn btn-md btn-warning"><a href="#/beer-ibu">Find Beers by IBU</a></button>
+          <button type="button" class="btn btn-md btn-warning"><a href="#/beers">Find Beers by Name</a></button>
+          <button type="button" class="btn btn-md btn-warning"><a href="#/breweries">Find Breweries by Name</a></button>
         </div>
 
         <hr class="featurette-divider">
