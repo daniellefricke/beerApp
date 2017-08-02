@@ -1,0 +1,421 @@
+body{
+  background-color: #F6ED93
+}
+
+body h1{
+  font-family: 'Righteous', sans-serif;
+}
+
+footer{
+  text-align: center;
+  color: orange;
+  clear: both;
+}
+
+.navbar-header{
+  background-color: rgba(236, 153, 48, 0.5);
+  color: black;
+  padding-left: 15px;
+  text-align: center;
+  font-family: 'Righteous', sans-serif;
+}
+
+.navbar-header:hover{
+  background-color: rgba(236, 153, 48, 1);
+}
+
+.header img{
+  height: 300px;
+  width: 100%;
+}
+
+.logoHeader{
+  height: 10px;
+}
+.logoHeader h1{
+  position: relative;
+  top: -175px;
+  font-family: 'Righteous', sans-serif;
+  font-size: 100px;
+  color: black;
+  text-align: center;
+}
+
+.intro_head{
+  float: left;
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  color: orange;
+}
+
+.intro_img img{
+  width: 45%;
+  float: right;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+
+.intro_content{
+  width: 45%;
+  margin-left: 20px;
+  font-size: 20px;
+  float: left;
+}
+
+.btn a{
+  color: black;
+  text-decoration: none;
+}
+
+.btn a:hover{
+  color: grey;
+  text-decoration: none;
+}
+
+.btn a:active{
+  color: grey;
+  text-decoration: none;
+}
+.map img{
+  clear: both;
+  margin: 20px;
+  width: 25%;
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+
+.content{
+  float: left;
+  margin: 20px;
+  background-color: white;
+  width: 60%;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.content_head{
+  background-color: #FBB34C;
+  font-family: 'Righteous', sans-serif;
+}
+
+.brewImg{
+  position: inherit;
+  margin: auto;
+}
+
+.brewImg img{
+  margin: auto;
+  width: 95%;
+}
+
+.content h1{
+  font-size: 50px;
+}
+
+.content h2{
+  text-decoration: underline;
+  color: grey;
+}
+
+.content p{
+  font-family: Arial, sans-serif;
+}
+
+.mapContainer{
+  float: right;
+  width: 30%;
+  margin: 20px;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+
+aside{
+  float: right;
+  width: 30%;
+  margin: 20px;
+  background-color: lightgrey;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+}
+
+aside h1{
+  text-decoration: underline;
+  color: #FBB34C;
+}
+
+.beerContent{
+  display: block;
+  margin: auto;
+  background-color: white;
+  width: 50%;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#bac{
+  display: flex;
+  flex-direction: row;
+}
+
+#optionIcon{
+  width: 40px;
+  height: 40px;
+}
+.section{
+  width:100%;
+  text-align: center;
+  padding: 10px;
+}
+.section1{
+  clear: both;
+  width:500px;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.test{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.indexBrew{
+  margin: auto;
+  text-align: center;
+}
+
+.sorts{
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+.sorts button{
+  margin: 3px;
+}
+
+.well-lg{
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .logoHeader h1{
+    position: relative;
+    top: -155px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 75px;
+    color: black;
+    text-align: center;
+  }
+
+.intro_head{
+  text-align: center;
+}
+
+.intro_content{
+  position: relative;
+  float: none;
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  font-size: 20px;
+  clear: both;
+}
+
+.intro_img img{
+    display: block;
+    margin: auto;
+  float: none;
+  clear: both;
+  width: 80%;
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+
+.content{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+  clear: both;
+}
+
+.content img{
+  display: block;
+  padding: 10px;
+  margin: auto;
+  height: 150px;
+}
+
+.mapContainer{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  border: 1px solid orange;
+  border-radius: 10px;
+  clear: both;
+}
+
+aside{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  background-color: lightgrey;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+  clear: both;
+}
+
+.beerContent{
+  float: none;
+  display: block;
+  width: 90%;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid orange;
+  text-align: center;
+  border-radius: 10px;
+}
+
+}
+@media screen and (max-width: 600px) {
+
+  .logoHeader h1{
+    position: relative;
+    top: -135px;
+    font-size: 50px;
+  }
+
+  .content{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 10px;
+    clear: both;
+  }
+
+  .content img{
+    display: block;
+    padding: 10px;
+    margin: auto;
+    height: 150px;
+  }
+
+  .mapContainer{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
+    border: 1px solid orange;
+    border-radius: 10px;
+    clear: both;
+  }
+
+  aside{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: lightgrey;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 10px;
+    clear: both;
+  }
+
+  .beerContent{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 10px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .logoHeader h1{
+    position: relative;
+    font-size: 50px;
+  }
+
+  .content{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .content img{
+    display: block;
+    padding: 10px;
+    margin: auto;
+    height: 100px;
+  }
+
+  .mapContainer{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
+    border: 1px solid orange;
+    border-radius: 10px;
+  }
+
+  aside{
+    float: none;
+    display: block;
+    width: 90%;
+    margin: auto;
+    background-color: lightgrey;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .beerContent{
+    display: block;
+    margin: auto;
+    background-color: white;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid orange;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+}

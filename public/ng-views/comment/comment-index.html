@@ -1,0 +1,19 @@
+<p>Welcome to Brew Mood</p>
+<p>This web based application is devloped by three talented and passionate devlopers.<p>
+<p>Your comment is our feeedback to go forward, so please feel free to comment below about the work.<p>
+<p>Click here to comment:<input type="checkbox"  ng-model="vm.addComment"></p>
+
+  <div ng-show="vm.addComment">
+    <form>
+      <input placeholder="title" data-ng-model="vm.comment.title" />
+      <input placeholder="body" data-ng-model="vm.comment.body" />
+      <button type="button" data-ng-click="vm.create()">Create</button>
+    </form>
+  </div>
+
+  <div data-ng-repeat="commenti in vm.comments | orderBy: 'created_at':true">
+    <p><a ui-sref="commentShow({id: $index+1})">{{commenti.title}}</a>
+      <!-- <a ui-sref="commentEdit({id: $index+1.id})">Edit</a> -->
+     </p>
+    <p>{{commenti.body}}</p>
+  </div>

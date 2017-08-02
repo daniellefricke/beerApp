@@ -1,0 +1,42 @@
+<div class="breweryContainer">
+    <div class="content">
+      <div class="content_head">
+        <h1>{{vm.brewery.name}}</h1>
+      </div>
+      <div class="brewImg">
+        <img src="{{vm.brewery.large}}"></img>
+      </div>
+        <p>Address: {{vm.brewery.streetAddress}}, {{vm.brewery.locality}}, {{vm.brewery.a_region}}</p>
+        <p>Phone: {{vm.brewery.phone}}</p>
+        <p>Website: <a href='{{vm.brewery.website}}'>{{vm.brewery.website}}</a></p>
+        <p>{{vm.brewery.hoursOfOperation}}</p>
+        <h2>About</h2>
+        <p>{{vm.brewery.description}}</p>
+
+
+        <h2>Brewery Stats</h2>
+        <p>Brewery Type: {{vm.brewery.brandClassification}}</p>
+        <p>Year Established: {{vm.brewery.yearOpened}}</p>
+        <p>Organic: {{vm.brewery.isOrganic}}</p>
+        <p>Mass Owned: {{vm.brewery.isMassOwned}}</p>
+
+        <hr class="featurette-divider">
+</div>
+
+    <div class="mapContainer">
+      <ng-map center="[{{vm.brewery.latitude}}, {{vm.brewery.longitude}}]" zoom="10">
+          <marker position="[{{vm.brewery.latitude}}, {{vm.brewery.longitude}}]"></div>
+      </ng-map>
+    </div>
+
+    <aside class="userComments">
+      <h1>Beers</h1>
+      <p>from <b>{{vm.brewery.name}}</b></p>
+
+      <div class="beerContainer">
+        <div class="beerContainerBreweryShow" data-ng-repeat="beer in vm.brewery.beers_list">
+          <p class="style_name"><a data-ui-sref="beerShow({id: beer.id})">{{beer.name}} </a></p>
+        </div>
+      </div>
+    </aside>
+</div>
